@@ -21,17 +21,22 @@ public class Rectangle extends Figure {
     // -- Override methods
     @Override
     public String toString() {
-        return "{mArea=" + mArea + ", mPerimeter=" + mPerimeter + ", mWidth=" + mWidth + ", mHeight=" + mHeight + '}';
+        return "Rectangle{" +
+                "mArea=" + mArea +
+                ", mPerimeter=" + mPerimeter +
+                ", mWidth=" + mWidth +
+                ", mHeight=" + mHeight +
+                '}';
     }
 
     @Override
     public double areaCalculate() {
-        return mArea = this.mWidth * this.mHeight;
+        return this.mWidth * this.mHeight;
     }
 
     @Override
     public double perimeterCalculate() {
-        return mPerimeter = this.mWidth * 2 + this.mHeight * 2;
+        return this.mWidth * 2 + this.mHeight * 2;
     }
 
     // -- Getters

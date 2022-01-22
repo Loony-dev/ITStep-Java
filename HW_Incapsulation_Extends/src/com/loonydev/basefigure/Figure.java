@@ -6,8 +6,8 @@ public class Figure {
     protected double mPerimeter;
 
     public void calculate() {
-        areaCalculate();
-        perimeterCalculate();
+        mArea = areaCalculate();
+        mPerimeter = perimeterCalculate();
     }
 
     public double areaCalculate() {

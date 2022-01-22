@@ -21,19 +21,24 @@ public class TriangleIsosceles extends Figure {
     // -- Override methods
     @Override
     public String toString() {
-        return "{mArea=" + mArea + ", mPerimeter=" + mPerimeter + ", mBase=" + mBase + ", mHeight=" + mHeight + '}';
+        return "TriangleIsosceles{" +
+                "mArea=" + mArea +
+                ", mPerimeter=" + mPerimeter +
+                ", mBase=" + mBase +
+                ", mHeight=" + mHeight +
+                '}';
     }
 
     @Override
     public double areaCalculate() {
-        return mArea = 0.5 * getBase() * getHeight();
+        return 0.5 * getBase() * getHeight();
     }
 
     @Override
     public double perimeterCalculate() {
         double a = Math.sqrt(Math.pow(getBase() / 2, 2) + Math.pow(getHeight(), 2));
 
-        return mPerimeter = 2 * a + getBase();
+        return 2 * a + getBase();
     }
 
     // -- Getters

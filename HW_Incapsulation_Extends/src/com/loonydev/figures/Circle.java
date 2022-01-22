@@ -18,17 +18,21 @@ public class Circle extends Figure {
     // -- Override methods
     @Override
     public String toString() {
-        return "{area=" + mArea + ", perimeter=" + mPerimeter + ", radius=" + mRadius + '}';
+        return "Circle{" +
+                "mArea=" + mArea +
+                ", mPerimeter=" + mPerimeter +
+                ", mRadius=" + mRadius +
+                '}';
     }
 
     @Override
     public double areaCalculate() {
-        return mArea = Math.PI * Math.pow(getRadius(), 2);
+        return Math.PI * Math.pow(getRadius(), 2);
     }
 
     @Override
     public double perimeterCalculate() {
-        return mPerimeter = 2 * Math.PI * getRadius();
+        return 2 * Math.PI * getRadius();
     }
 
     // -- Getters
